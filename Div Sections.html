@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Divs</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    .colored-div {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 2rem;
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .colored-div:nth-child(1) {
+      background-color: #3498db;
+    }
+
+    .colored-div:nth-child(2) {
+      background-color: #e74c3c;
+    }
+
+    .colored-div:nth-child(3) {
+      background-color: #2ecc71; 
+    }
+  </style>
+</head>
+<body>
+  <div class="colored-div">Section 1</div>
+  <div class="colored-div">Section 2</div>
+  <div class="colored-div">Section 3</div>
+</body>
+</html>
